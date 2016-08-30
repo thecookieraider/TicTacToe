@@ -111,7 +111,7 @@ public class TicTacToe extends JFrame
         JMenuItem clearConsole1 = new JMenuItem("Clear console 1");
         JMenuItem clearConsole2 = new JMenuItem("Clear console 2");
         JMenuItem clearConsole3 = new JMenuItem("Clear console 3");
-        JMenuItem sound = new JMenuItem("Mute Sound");
+        final JMenuItem sound = new JMenuItem("Mute Sound");
 		/* Menu items */
 		
 		/* Set accelerators for important menu items so the user 

@@ -77,7 +77,7 @@ public class SoundHandler
 	* thread so that main processes don't get held up
 	* and so that other songs can be played and stopped
 	* as well */
-    public void pauseFor(int milliseconds, String name)
+    public void pauseFor(final int milliseconds, final String name)
     {
 		/* Pause the song */
         pause(name);
@@ -103,7 +103,7 @@ public class SoundHandler
 	/** Stops a given clip for a given amount of
 	* milliseconds. The wait is done through a seperate thread
 	* so that mainline processes aren't interrupted */
-	public void stopFor(int milliseconds, String name)
+	public void stopFor(final int milliseconds, final String name)
 	{
 		stop(name);
 		new Thread(new Runnable() {
@@ -150,7 +150,7 @@ public class SoundHandler
    * If the boolean given is true, the clip will
    * forever. If the boolean given is false, the clip
    * stop looping, but continue playing */
-   public void loop(String name, boolean arg)
+   public void loop(final String name, final boolean arg)
    {
        if(arg)
        {
